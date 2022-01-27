@@ -1,5 +1,5 @@
 <template>
-  <img :src="enlace" alt="Not found" />
+  <img :src="enlace" alt="Not found" v-show="enlace!=null"/>
   <h2>{{name}}</h2>
   <div class="contenedor-opciones">
     <input type="text" placeholder="Ingrese un ID de Pokemon" v-model="nid" />
